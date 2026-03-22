@@ -1,0 +1,38 @@
+# ===========================================
+# fd global ignore — matches .gitignore style
+# ===========================================
+
+# Version control
+.git/
+
+# Dependencies
+node_modules/
+vendor/
+.venv/
+__pycache__/
+
+# Build output
+dist/
+build/
+.next/
+out/
+target/
+*.o
+*.pyc
+*.class
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Caches
+.cache/
+.npm/
+.nvm/.cache/

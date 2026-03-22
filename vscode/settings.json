@@ -1,0 +1,200 @@
+{
+  // ===========================================
+  // VS Code Pro Config — iMac 27" 5K 2017
+  // ===========================================
+
+  // ── Theme & Appearance ──
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+  "workbench.sideBar.location": "left",
+  "workbench.tree.indent": 16,
+  "workbench.editor.enablePreview": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.list.smoothScrolling": true,
+
+  // ── Font (5K Retina optimized) ──
+  "editor.fontFamily": "'JetBrains Mono Nerd Font', 'JetBrains Mono', Menlo, monospace",
+  "editor.fontSize": 13,
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 1.6,
+  "editor.letterSpacing": 0.3,
+  "terminal.integrated.fontFamily": "'JetBrains Mono Nerd Font'",
+  "terminal.integrated.fontSize": 13,
+
+  // ── Editor ──
+  "editor.cursorStyle": "block",
+  "editor.cursorBlinking": "solid",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [80, 120],
+  "editor.wordWrap": "off",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.linkedEditing": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.scrollBeyondLastLine": false,
+  "editor.roundedSelection": false,
+  "editor.occurrencesHighlight": "singleFile",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "off",
+    "strings": "off"
+  },
+  "editor.suggestSelection": "first",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.inlineSuggest.enabled": true,
+
+  // ── Search ──
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.git": true,
+    "**/coverage": true,
+    "**/.next": true
+  },
+  "search.useIgnoreFiles": true,
+  "search.smartCase": true,
+
+  // ── Files ──
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/__pycache__": true,
+    "**/*.pyc": true
+  },
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/.git/objects/**": true
+  },
+
+  // ── Terminal ──
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.cursorStyle": "block",
+  "terminal.integrated.cursorBlinking": false,
+  "terminal.integrated.scrollback": 100000,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.gpuAcceleration": "on",
+
+  // ── Git ──
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.openRepositoryInParentFolders": "always",
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  // ── Vim extension ──
+  "vim.enable": true,
+  "vim.leader": "<space>",
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
+  "vim.smartcase": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "rgba(251, 73, 52, 0.3)",
+  "vim.highlightedyank.duration": 200,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    { "before": ["<leader>", "<space>"], "commands": [":nohl"] },
+    { "before": ["<leader>", "f"], "commands": ["workbench.action.quickOpen"] },
+    { "before": ["<leader>", "r", "g"], "commands": ["workbench.action.findInFiles"] },
+    { "before": ["<leader>", "e"], "commands": ["workbench.action.toggleSidebarVisibility"] },
+    { "before": ["<leader>", "w"], "commands": [":w"] },
+    { "before": ["<leader>", "q"], "commands": [":q"] },
+    { "before": ["<leader>", "b", "b"], "commands": ["workbench.action.openPreviousRecentlyUsedEditor"] },
+    { "before": ["<leader>", "b", "d"], "commands": ["workbench.action.closeActiveEditor"] },
+    { "before": ["H"], "commands": ["workbench.action.previousEditor"] },
+    { "before": ["L"], "commands": ["workbench.action.nextEditor"] },
+    { "before": ["<C-d>"], "after": ["<C-d>", "z", "z"] },
+    { "before": ["<C-u>"], "after": ["<C-u>", "z", "z"] },
+    { "before": ["n"], "after": ["n", "z", "z", "z", "v"] },
+    { "before": ["N"], "after": ["N", "z", "z", "z", "v"] },
+    { "before": ["J"], "after": ["m", "z", "J", "`", "z"] },
+    { "before": ["Y"], "after": ["y", "$"] },
+    { "before": ["]", "h"], "commands": ["workbench.action.editor.nextChange"] },
+    { "before": ["[", "h"], "commands": ["workbench.action.editor.previousChange"] },
+    { "before": ["]", "a"], "commands": ["editor.action.marker.next"] },
+    { "before": ["[", "a"], "commands": ["editor.action.marker.prev"] },
+    { "before": ["<leader>", "g", "g"], "commands": ["workbench.view.scm"] },
+    { "before": ["<leader>", "g", "B"], "commands": ["gitlens.toggleFileBlame"] },
+    { "before": ["<leader>", "c", "a"], "commands": ["editor.action.quickFix"] },
+    { "before": ["g", "d"], "commands": ["editor.action.revealDefinition"] },
+    { "before": ["g", "r"], "commands": ["editor.action.goToReferences"] },
+    { "before": ["g", "i"], "commands": ["editor.action.goToImplementation"] },
+    { "before": ["K"], "commands": ["editor.action.showHover"] }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"], "after": ["g", "v"] },
+    { "before": ["<"], "commands": ["editor.action.outdentLines"], "after": ["g", "v"] },
+    { "before": ["<leader>", "p"], "after": ["\"", "_", "d", "P"] }
+  ],
+  "vim.insertModeKeyBindings": [
+    { "before": ["j", "k"], "after": ["<Esc>"] }
+  ],
+
+  // ── Extensions ──
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "gitlens.codeLens.enabled": false,
+  "gitlens.currentLine.enabled": true,
+  "gitlens.hovers.currentLine.over": "line",
+  "errorLens.enabledDiagnosticLevels": ["error", "warning"],
+  "errorLens.gutterIconsEnabled": true,
+  "todohighlight.keywords": [
+    { "text": "TODO:", "color": "#282828", "backgroundColor": "#fabd2f" },
+    { "text": "FIXME:", "color": "#282828", "backgroundColor": "#fb4934" },
+    { "text": "HACK:", "color": "#282828", "backgroundColor": "#fe8019" },
+    { "text": "NOTE:", "color": "#282828", "backgroundColor": "#8ec07c" }
+  ],
+
+  // ── Language-specific ──
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "[go]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false
+  },
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "other": "off",
+      "comments": "off",
+      "strings": "off"
+    }
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // ── Misc ──
+  "telemetry.telemetryLevel": "off",
+  "update.mode": "manual",
+  "extensions.autoUpdate": false,
+  "security.workspace.trust.enabled": false
+}

@@ -1,0 +1,29 @@
+# ===========================================
+# ripgrep Pro Config
+# ===========================================
+
+# Smart case search
+--smart-case
+
+# Follow symlinks
+--follow
+
+# Hidden files (but respect .gitignore)
+--hidden
+
+# Exclude dirs
+--glob=!.git/
+--glob=!node_modules/
+--glob=!.venv/
+--glob=!__pycache__/
+--glob=!dist/
+--glob=!build/
+--glob=!target/
+--glob=!.cache/
+
+# Colors (gruvbox)
+--colors=match:fg:red
+--colors=match:style:bold
+--colors=line:fg:yellow
+--colors=path:fg:green
+--colors=path:style:bold

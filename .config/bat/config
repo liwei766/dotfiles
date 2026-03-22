@@ -1,0 +1,27 @@
+# ===========================================
+# bat Pro Config — iMac 27" 5K 2017
+# ===========================================
+
+# Theme
+--theme="gruvbox-dark"
+
+# Show line numbers, git changes, header
+--style="numbers,changes,header,grid"
+
+# Use less as pager with smart options
+--pager="less -RFX"
+
+# Wrap
+--wrap=auto
+
+# Tabs
+--tabs=4
+
+# Syntax mappings for common dotfiles
+--map-syntax="*.conf:INI"
+--map-syntax=".ignore:Git Ignore"
+--map-syntax=".fdignore:Git Ignore"
+--map-syntax="*.toml:TOML"
+--map-syntax=".zshrc:Bourne Again Shell (bash)"
+--map-syntax=".zshenv:Bourne Again Shell (bash)"
+--map-syntax=".zprofile:Bourne Again Shell (bash)"

@@ -1,0 +1,105 @@
+# ===========================================
+# Ghostty Pro Config — iMac 27" 5K 2017
+# Radeon Pro 570 / Intel i5-7500
+# ===========================================
+
+# Font — optimized for 5K Retina
+font-family = JetBrains Mono Nerd Font
+font-family-bold = JetBrains Mono Nerd Font
+font-family-italic = JetBrains Mono Nerd Font
+font-size = 13
+font-thicken = true
+adjust-cell-height = 25%
+adjust-cell-width = -2%
+
+# Theme
+theme = Gruvbox Dark Hard
+background-opacity = 0.95
+background-blur = 20
+unfocused-split-opacity = 0.85
+
+# Window — 5K display has lots of real estate
+window-padding-x = 12
+window-padding-y = 8
+window-decoration = true
+macos-titlebar-style = tabs
+macos-option-as-alt = true
+window-save-state = always
+confirm-close-surface = false
+
+# Cursor
+cursor-style = block
+cursor-style-blink = false
+cursor-color = #fe8019
+shell-integration-features = cursor,sudo,title
+
+# Scrollback
+scrollback-limit = 100000
+
+# Mouse
+mouse-hide-while-typing = true
+copy-on-select = clipboard
+focus-follows-mouse = true
+
+# Clipboard
+clipboard-read = allow
+clipboard-write = allow
+clipboard-paste-protection = false
+
+# Performance — Radeon Pro 570
+window-vsync = true
+freetype-load-flags = no-hinting
+
+# Quick reload config
+keybind = super+shift+comma=reload_config
+
+# Tabs
+keybind = super+t=new_tab
+keybind = super+w=close_surface
+keybind = super+1=goto_tab:1
+keybind = super+2=goto_tab:2
+keybind = super+3=goto_tab:3
+keybind = super+4=goto_tab:4
+keybind = super+5=goto_tab:5
+keybind = super+6=goto_tab:6
+keybind = super+7=goto_tab:7
+keybind = super+8=goto_tab:8
+keybind = super+9=last_tab
+
+# Splits
+keybind = super+d=new_split:right
+keybind = super+shift+d=new_split:down
+keybind = super+alt+left=goto_split:left
+keybind = super+alt+right=goto_split:right
+keybind = super+alt+up=goto_split:top
+keybind = super+alt+down=goto_split:bottom
+keybind = super+shift+left=resize_split:left,40
+keybind = super+shift+right=resize_split:right,40
+keybind = super+shift+up=resize_split:up,40
+keybind = super+shift+down=resize_split:down,40
+keybind = super+shift+enter=toggle_split_zoom
+
+# Font size
+keybind = super+equal=increase_font_size:1
+keybind = super+minus=decrease_font_size:1
+keybind = super+0=reset_font_size
+
+# Navigation
+keybind = super+shift+bracket_left=previous_tab
+keybind = super+shift+bracket_right=next_tab
+keybind = super+home=scroll_to_top
+keybind = super+end=scroll_to_bottom
+keybind = page_up=scroll_page_up
+keybind = page_down=scroll_page_down
+
+# Selection
+keybind = super+shift+a=select_all
+
+# Quick clear
+keybind = super+k=clear_screen
+
+# Open config in editor
+keybind = super+comma=open_config
+
+# Equalize splits
+keybind = super+shift+e=equalize_splits
