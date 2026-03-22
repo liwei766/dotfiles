@@ -32,7 +32,8 @@ dotfiles/
 │       ├── keymap.toml
 │       └── theme.toml
 ├── vim/
-│   └── my_configs.vim       # Vim config (for ~/.vim_runtime/)
+│   ├── .vimrc               # Vim entry point (loads amix/vimrc framework)
+│   └── my_configs.vim       # Vim personal config (for ~/.vim_runtime/)
 ├── vscode/
 │   ├── settings.json        # VS Code settings
 │   ├── keybindings.json     # VS Code keybindings
